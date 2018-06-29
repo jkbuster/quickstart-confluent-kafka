@@ -207,25 +207,27 @@
         },
         "BrokerNodeInstanceType": {
             "AllowedValues": [
-                "m3.large",
-                "m3.xlarge",
-                "m4.large",
-                "m4.xlarge",
-                "m4.2xlarge",
-                "m4.4xlarge",
-                "c3.xlarge",
-                "c3.2xlarge",
-                "c3.4xlarge",
+                "m5.large",
+                "m5.xlarge",
+                "m5.2xlarge",
+                "m5.4xlarge",
+                "m5d.large",
+                "m5d.xlarge",
+                "m5d.2xlarge",
+                "m5d.4xlarge",
+                "c5.xlarge",
+                "c5.2xlarge",
+                "c5.4xlarge",
                 "d2.xlarge",
                 "d2.2xlarge",
                 "d2.4xlarge",
                 "d2.8xlarge",
-                "i2.xlarge",
-                "i2.2xlarge"
+                "i3.xlarge",
+                "i3.2xlarge"
             ],
             "ConstraintDescription": "Must be a valid EC2 instance type.",
-            "Default": "m4.xlarge",
-            "Description": "Instance Type for Kafka brokers; select m3/m4 or i2 instance types for us-west-1 and sa-east-1",
+            "Default": "m5.xlarge",
+            "Description": "Instance Type for Kafka brokers",
             "Type": "String"
         },
         "BrokerNodeSpotPrice": {
@@ -272,6 +274,7 @@
         },
         "ConfluentVersion": {
             "AllowedValues": [
+                "4.1.1",
                 "4.1.0",
                 "4.0.0",
                 "3.3.1"
@@ -389,24 +392,27 @@
         },
         "WorkerNodeInstanceType": {
             "AllowedValues": [
-                "m3.large",
-                "m3.xlarge",
-                "m4.xlarge",
-                "m4.2xlarge",
-                "m4.4xlarge",
-                "c3.xlarge",
-                "c3.2xlarge",
-                "c3.4xlarge",
+                "m5.large",
+                "m5.xlarge",
+                "m5.2xlarge",
+                "m5.4xlarge",
+                "m5d.large",
+                "m5d.xlarge",
+                "m5d.2xlarge",
+                "m5d.4xlarge",
+                "c5.xlarge",
+                "c5.2xlarge",
+                "c5.4xlarge",
                 "d2.xlarge",
                 "d2.2xlarge",
                 "d2.4xlarge",
                 "d2.8xlarge",
-                "i2.xlarge",
-                "i2.2xlarge"
+                "i3.xlarge",
+                "i3.2xlarge"
             ],
             "ConstraintDescription": "Must be a valid EC2 instance type.",
-            "Default": "m4.xlarge",
-            "Description": "Instance Type for Kafka Connect workers; select m3/m4 or i2 instance types for us-west-1 and sa-east-1",
+            "Default": "m5.xlarge",
+            "Description": "Instance Type for Kafka Connect workers",
             "Type": "String"
         },
         "WorkerNodeSpotPrice": {
@@ -426,16 +432,16 @@
         },
         "ZookeeperNodeInstanceType": {
             "AllowedValues": [
-                "m3.medium",
-                "m3.large",
-                "m3.xlarge",
-                "m4.large",
-                "m4.xlarge",
-                "m4.2xlarge"
+                "m5.large",
+                "m5.xlarge",
+                "m5.2xlarge",
+                "m5d.large",
+                "m5d.xlarge",
+                "m5d.2xlarge"
             ],
             "ConstraintDescription": "Must be a valid EC2 instance type.",
-            "Default": "m4.large",
-            "Description": "Instance Type for Zookeeper servers; select m3/m4 for us-west-1 and sa-east-1",
+            "Default": "m5.large",
+            "Description": "Instance Type for Zookeeper servers",
             "Type": "String"
         },
         "ZookeeperNodeSpotPrice": {
